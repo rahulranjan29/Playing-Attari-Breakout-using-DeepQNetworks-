@@ -8,4 +8,4 @@ Pytorch
 
 ## How to run :
 - To train DQN:
-- python main.py --train_dqn
+-- python main.py --train_dqn
