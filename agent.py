@@ -114,10 +114,7 @@ class Agent_DQN_Trainer(object):
         sample = random.random()
 
         if test:
-            if random.random() <= 0.025:
-                return random.randrange(self.n_actions)
-            else:
-                return self.policy_net(observation).max(1)[1].view(1, 1).item()
+            return self.policy_net(observation).max(1)[1].view(1, 1).item()
 
         if sample <= self.epsilon:
             action = torch.tensor([[random.randrange(self.n_actions)]], device=self.cuda, dtype=torch.long)
