@@ -7,10 +7,9 @@ Pytorch Implementation Of DeepQ Reinforcement Learning Algorithm to play Attari 
 
 ## Requirements
 - OpenAI Gym with attari environment.[[Installation for Linux]](https://github.com/openai/gym#installation)  [[For windows]](https://towardsdatascience.com/how-to-install-openai-gym-in-a-windows-environment-338969e24d30)
-
 - OpenCV
-
 - Pytorch
+- TensorboardX
 
 ## How to run :
 - To train DQN: python main.py --train_dqn
