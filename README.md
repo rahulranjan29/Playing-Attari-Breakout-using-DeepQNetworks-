@@ -16,7 +16,7 @@ Pytorch Implementation Of DeepQ Reinforcement Learning Algorithm to play Attari 
 - To test DQN : python main.py --test_dqn --resume (Path to model weights)
 
 ## Algorithm :
-![](images/algo.png)
+![](images/Algo.png)
 
 Reference Paper: Human Level Control Through Deep Reinforcement Learning.[Link](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf)
 
