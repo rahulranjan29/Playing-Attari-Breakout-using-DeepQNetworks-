@@ -75,5 +75,5 @@ Fig6: AverageLoss/100Episode
 You could run this code on google colab and it will take around 4-5 hours of training to achieve the above results. Make sure you dont change the seed to reproduce it.
 
 ## References
-[Breakout Tensorflow Implementation by Adrain Hsu](https://github.com/AdrianHsu/breakout-Deep-Q-Network)
-[Pytorch tutorial on Reinforcment Learning](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
+- [Breakout Tensorflow Implementation by Adrain Hsu](https://github.com/AdrianHsu/breakout-Deep-Q-Network)
+- [Pytorch tutorial on Reinforcment Learning](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
