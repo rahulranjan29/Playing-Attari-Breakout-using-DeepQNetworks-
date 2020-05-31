@@ -8,7 +8,7 @@ Created on Tue May 26 22:44:20 2020
 import argparse
 from environment import Environment
 import numpy as np
-
+from agent import to_tensor
 
 def parse():
     parser = argparse.ArgumentParser()
@@ -28,7 +28,7 @@ def test(agent, env, total_episodes=30):
     rewards = []
     env.seed(312421)
     for i in range(total_episodes):
-        state = agent.to_tensor(env.reset())
+        state = to_tensor(env.reset())
         done = False
         episode_reward = 0.0
 
@@ -38,7 +38,7 @@ def test(agent, env, total_episodes=30):
             action = agent.epsilon_greedy_policy(state, env.action_space.n, test=True)
 
             state, reward, done, info = env.step(action)
-            state = agent.to_tensor(state)
+            state = to_tensor(state)
             episode_reward += reward
         rewards.append(episode_reward)
 
