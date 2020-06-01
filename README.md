@@ -1,5 +1,5 @@
 # Playing-Attari-Breakout-using-DeepQNetworks-
-Pytorch Implementation Of Deep-Q Reinforcement Learning Algorithm to play Attari Breakout game. 
+Pytorch Implementation Of Deep-Q Reinforcement Learning Algorithm to play the Attari Breakout game. 
 
 <img src="images/demo.gif" height="400" width="400">
 
