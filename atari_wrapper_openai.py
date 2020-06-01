@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 26 23:24:00 2020
-
-@author: Rahul Verma
+https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py
 """
 
 import numpy as np
