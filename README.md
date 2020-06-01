@@ -16,11 +16,11 @@ Pytorch Implementation Of Deep-Q Reinforcement Learning Algorithm to play the At
 ## How to run :
 - To train DQN: python main.py --train_dqn
 - To test DQN : python main.py --test_dqn --resume (Path to model weights)
-
+- [Saved Model Weights](https://drive.google.com/drive/folders/1cLV9bLbcvA83tDp3y1mDM9CiNwc84cz4?usp=sharing)
 ## Algorithm :
 <img src="images/Algo.PNG" width="50%">
 
-Reference Paper: Human Level Control Through Deep Reinforcement Learning.[Link](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf)
+Reference Paper: Human Level Control Through Deep Reinforcement Learning.[[Link]](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf)
 
 ## Implementation Details:
 
@@ -31,7 +31,7 @@ We store states, action, reward in memory to be used for experience replay. We s
 
 **An important thing to take into consideration is the amount of memory 0.4M frames will consume in your RAM. If we store scaled versions(dtype: np.float32) of frames in buffer, each frame costs us 0.12Mb. If you use 0.4M frames, the total memory you require would be around 45Gb which we obviously dont want. To make efficient use of memory, do not scale the frames, simply store each frame in np.uint8 format in buffer and whenever required just convert to float32. In np.uint8 format, the total memory required would be around 10~11Gb for 0.4M frames.**
 
-### PreProcessing:
+### Preprocessing:
 attari_wrapper_openai.py modifies the original attari environment to add functionalities which was implemented in DeepMind's Paper.
 It also applies a pre-processing function to convert the original 210x160x3 frame to 84x84 grayscale frame and stacks up 4 recent frames to get the input of shape 4x84x84 to be forwared to the CNN model. Make sure you do not set the Scale parameter as True to avoid memory issues. 
 
